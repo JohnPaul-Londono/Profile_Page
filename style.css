@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap');
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+}
+/* Nav rules */
+#navbar{
+    display: flex;
+    background-color: rgb(89, 209, 245);
+    min-height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.navlinks{
+    color:white;
+    margin-left: 100px;
+    position: relative;
+}
+ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    align-items: center;
+}
+#profile{
+    font-size: 30px;
+}
+
+#btn{
+    color: white;
+    background-color: royalblue;
+    width: 80px;
+    padding: 5px;
+    border-radius: 5%;
+    margin-right: 100px;
+    position: relative;
+
+}
+/* container rules */
+#container{
+    display: flex;
+    width: 858px;
+    min-height: 600px;
+    /* border: red dotted; */
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.leftbox{
+    flex: 3;
+    flex-direction: column;
+    /* border: blue dotted; */
+}
+
+.parentbox{
+    background-color: white;
+    border: lightgrey solid;
+    width: 500px;
+    min-height: 300px;
+    /* margin: 0 auto; */
+}
+.bluebox{
+    width: 506px;
+    height: 81px;
+    background-color: royalblue;
+    position: relative;
+    right: 3px;
+    bottom: 3px;
+}
+
+.relative1{
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+
+}
+.name{
+    position: relative;
+    bottom: 65px;
+    left: 20px;
+}
+#location{
+    position: relative;
+    display: flex;
+    bottom:60px;
+    gap: 10px;
+    left: 25px;
+}
+.img1{
+    width: auto;
+    height: 20px;
+}
+.chi{
+    margin: 0px;
+}
+#negative{
+    -webkit-filter:invert(100%);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');
+} 
+#aboutme{
+    font-size: 12px;
+    position: relative;
+    left: 20px;
+    bottom: 45px;
+}
+.aboutme1{
+    margin-top:0px;
+    margin-bottom: 5px;
+}
+#gear{
+    display: flex;
+    position: relative;
+    gap: 10px;
+    left: 20px;
+    bottom: 30px;
+}
+.gear1{
+    width: auto;
+    height: 20px;
+}
+
+/* education rules */
+
+.lowerbox{
+    background-color: white;
+    border: lightgrey solid;
+    width: 500px;
+    min-height: 200px;
+    margin-top: 30px;
+}
+.tealbox{
+    background-color: rgb(89, 209, 245);
+    min-height: 40px;
+}
+#edu{
+    color: white;
+    font-size: 18px;
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+}
+
+.edutext{
+    position: relative;
+    left: 20px;
+}
+.edutext1{
+    color: rgb(134, 144, 155);
+}
+
+
+/* rightbox rules */
+
+.rightbox{
+    flex: 2;
+    flex-direction: column;
+    /* border: green dotted; */
+}
+.topboxright{
+    background-color: white;
+    border: lightgrey solid;
+    width: 335px;
+    min-height: 200px;
+    margin-left: 25px;
+    position: relative;
+}
+.topboxteal{
+    background-color: rgb(89, 209, 245);
+    min-height: 50px;
+    display: flex;
+    position: relative;
+}
+.conre{
+    position: relative;
+    display: flex; 
+    gap: 10px;
+    left: 25px;
+}
+.pin{
+    position: relative;
+    width: auto;
+    height: 25px;
+    display: flex;
+   top: 10px;
+}
+.titlere{
+    color: white;
+    font-size: 18px;
+    
+}
+.deny{
+    display: flex;
+    justify-content: space-between;
+}
+
+.userreq{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    top: 5px;
+    left: 40px;
+}
+.user1{
+    width: auto;
+    height: 40px;
+}
+.friend{
+    position: relative;
+    font-size: 20px;
+    margin-top: 15px;
+    left: 10px;
+}
+.userreq1{
+    display: flex;
+    position: relative;
+    gap: 10px;
+    top: 5px;
+    right: 30px;
+
+}
+.accept{
+    width: auto;
+    height: 40px; 
+
+}
+
+.btmboxright{
+    background-color: white;
+    border: lightgrey solid;
+    width: 335px;
+    min-height: 300px;
+    margin-left: 25px;
+    position: relative;
+    margin-top: 20px;
+}
+#box{
+    background-color: rgb(255, 255, 255);
+    border-top: lightgrey solid;
+    min-height: 50px;
+    display: flex;
+    position: relative;
+}
+.conre1{
+    font-size: 18px;
+    position: relative;
+    display: flex; 
+    gap: 10px;
+    left: 25px;
+    top: 15px;
+}
+
+#navbtm{
+    background-color: rgb(89, 209, 245);
+    min-height: 20px;
+    width: 100%; 
+    bottom: 0px;
+    position: fixed;
+    display: flex;
+}
