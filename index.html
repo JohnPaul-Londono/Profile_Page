@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- navbar -->
     <div id="navbar">
         <div class="navlinks">
             <ul>
@@ -21,105 +22,91 @@
         </div>
         <button id="btn">Sign Out</button>
     </div>
+    <!-- container -->
     <div id="container">
+        <!-- leftbox -->
         <div class="leftbox">
-            <div class="parentbox">
-                <div class="bluebox"></div>
-                <div class="relative1">
-                    <img id="negative" src="./images/user-circle1.png" alt="Profile Image" width=75 height=75>
+            <!-- user card -->
+            <div class="user-card">
+                <div class="card-header">
+                    <img id="negative" src="./images/user-circle1.png" alt="user-circle" class="avatar-m">
                 </div>
-                <h1 class="name">John Londono</h1>
-                <div id="location">
-                    <img class="location1 img1" src="./icons/map-marker.png" alt="Location Marker">
-                    <h2 class="location1 chi">Chicago</h2>
-                </div>
-                <div id="aboutme">
-                    <h2 class="aboutme1">Developer | Engineer | Problem Solver</h2>
-                    <h2 class="aboutme1">Master of shadows and the Internet!</h2>
-                </div>
-                <div id="gear">
-                    <img class="gear1" src="./icons/gear.png" alt="">
-                    <a href="#">edit profile</a>
+                <div class="card-body">
+                    <h1>John Londono</h1>
+                    <h3>
+                        <img src="./icons/map-marker.png" alt="pin" class="icon-s"> 
+                        Chicago
+                    </h3>
+                    <p>Developer | Engineer | Problem Solver<br>
+                        Master of shadows and the Internet!</p>
+                    <p>
+                        <a href="#">
+                            <img src="icons/gear.png" alt="gear" class="icon-s"> 
+                                edit profile
+                        </a>
+                    </p>
                 </div>
             </div>
+            <!-- education box -->
             <div class="lowerbox">
                 <div class="tealbox"></div>
-                <!-- <div id="edu">Education</div> -->
                 <p id="edu">Education</p>
                 <h2 class="edutext">Coding Dojo - Full Stack Bootcamp</h2>
                 <p class="edutext edutext1">Oct 2021 - Feb 2022</p>
                 <p class="edutext">Triple black belt in Python, MERN, and C#</p>
             </div>
         </div>
+        <!-- right side -->
         <div class="rightbox">
+            <!-- top box -->
             <div class="topboxright">
-                <div class="topboxteal">
-                    <div class="conre">
-                        <img class="pin" src="./icons/map-marker.png" alt="Pin">
-                        <p class="titlere">Connection Requests</p>
-                    </div>
+                <div class="conre">
+                    <img class="pin" src="./icons/map-marker.png" alt="Pin">
+                    <p class="titlere">Connection Requests</p>
                 </div>
-                <div class="deny">
-                    <div class="userreq">
-                        <img class="user1" src="./images/user-circle1.png" alt="Profile">
-                        <p class="friend">Todd E</p>
-                    </div>
-                    <div class="userreq1">
-                        <img class="accept" src="./icons/accept-circle.png" alt="Accept">
-                        <img class="accept" src="./icons/close-circle.png" alt="Deny">
-                    </div>
+                <div class="newfriends">
+                    <img class="user1" src="./images/user-circle1.png" alt="Profile">
+                    <p class="friend">Todd E</p>
+                    <img class="accept" onclick="hide(this)" src="./icons/accept-circle.png" alt="Accept">
+                    <img class="accept" onclick="hide(this)" src="./icons/close-circle.png" alt="Deny">
                 </div>
-                <div class="deny">
-                    <div class="userreq">
-                        <img class="user1" src="./images/user-circle1.png" alt="Profile">
-                        <p class="friend">Phil K</p>
-                    </div>
-                    <div class="userreq1">
-                        <img class="accept" src="./icons/accept-circle.png" alt="Accept">
-                        <img class="accept" src="./icons/close-circle.png" alt="Deny">
-                    </div>
+                <div class="newfriends">
+                    <img class="user1" src="./images/user-circle1.png" alt="Profile">
+                    <p class="friend">Phil K</p>
+                    <img class="accept" onclick="hide(this)" src="./icons/accept-circle.png" alt="Accept">
+                    <img class="accept" onclick="hide(this)" src="./icons/close-circle.png" alt="Deny">
                 </div>
             </div>
-            <div class="connections">
-                <div class="btmboxright">
-                    <div class="topboxteal">
-                        <div class="conre">
-                            <img class="pin" src="./icons/map-marker.png" alt="Pin">
-                            <p class="titlere">Your Connections</p>
-                        </div>
-                    </div>
-                    <div class="deny">
-                        <div class="userreq">
-                            <img class="user1" src="./images/adrien-s.jpg" alt="Profile">
-                            <p class="friend">Adrien D</p>
-                        </div>
-                    </div>
-                    <div class="deny">
-                        <div class="userreq">
-                            <img class="user1" src="./images/anne-s.jpg" alt="Profile">
-                            <p class="friend">Anne J</p>
-                        </div>
-                    </div>
-                    <div class="deny">
-                        <div class="userreq">
-                            <img class="user1" src="./images/alayne-s.jpg" alt="Profile">
-                            <p class="friend">Alayne T</p>
-                        </div>
-                    </div>
-                    <div class="deny">
-                        <div class="userreq">
-                            <img class="user1" src="./images/arry-s.jpg" alt="Profile">
-                            <p class="friend">Arry Y</p>
-                        </div>
-                    </div>
-                    <div id="box">
-                        <a class="conre1" href="#"> View More</a>
-                    </div>
+            <!-- bottom right box -->
+            <div class="btmboxright">
+                <div class="conre">
+                    <img class="pin" src="./icons/map-marker.png" alt="Pin">
+                    <p class="titlere">Your Connections</p>
                 </div>
-            </div>
+                <div class="friends">
+                    <img class="user1" src="./images/adrien-s.jpg" alt="Profile">
+                    <p class="friend">Adrien D</p>
+                </div> 
+                <div class="friends">
+                    <img class="user1" src="./images/anne-s.jpg" alt="Profile">
+                    <p class="friend">Anne J</p>
+                </div> 
+                <div class="friends">
+                    <img class="user1" src="./images/alayne-s.jpg" alt="Profile">
+                    <p class="friend">Alayne T</p>
+                </div> 
+                <div class="friends">
+                    <img class="user1" src="./images/arry-s.jpg" alt="Profile">
+                    <p class="friend">Arry Y</p>
+                </div> 
+                <div id="box">
+                    <a id="conre1" href="#"> View More</a>
+                </div>
+            </div>   
         </div>
     </div>
     <div id="navbtm"></div>
+    <script src="script.js"></script>
 </body>
 
 </html>
